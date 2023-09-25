@@ -1,0 +1,9 @@
+{
+  "name": "mern-skeleton",
+  "version": "1.0.0",
+  "description": "A basic but fully functioning MERN web application",
+  "main": "./dist/server.generated.js",
+  "repository": "https://github.com/devtony01/mern-skeleton.git",
+  "author": "devtony01",
+  "license": "MIT"
+}
