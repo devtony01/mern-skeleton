@@ -7,8 +7,14 @@ import cors from 'cors';
 import Template from './../template';
 import userRoutes from './routes/user.routes';
 import authRoutes from './routes/auth.routes'
+import bundle from "./bundle";
+import path from 'path';
+const cwd = process.cwd();
 
 const app = express();
+bundle.compile(app);
+
+app.use('/dist', express.static(path.join(cwd, "dist")));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
